@@ -9,6 +9,7 @@ const AppRouter = () => {
                 <Route index element={<p>Homepage</p>} />
                 <Route path="housing" element={<p>Housing</p>} />
                 <Route path="housing/:id" element={<p>Housing detail</p>} />
+                <Route path="*" element={<p>Not found</p>} />
             </Route>
         </Routes>
     );
