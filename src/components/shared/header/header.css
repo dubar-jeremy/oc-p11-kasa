@@ -1,6 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
+  padding: 1em;
 }
 
 .header_logo {
@@ -29,6 +30,10 @@
 
 @media screen and (min-width: 768px) {
 
+    .header {
+        padding: 2em;
+    }
+    
     .header_logo {
         width: 150px;
     }
