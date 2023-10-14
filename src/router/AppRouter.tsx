@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import MainLayout from "../components/layout/MainLayout";
 import Home from "../page /home/Home";
+import Housing from "../page /housing/housing";
 
 
 const AppRouter = () => {
@@ -8,9 +9,9 @@ const AppRouter = () => {
         <Routes>
             <Route element={<MainLayout />}>
                 <Route index element={<Home />} />
-                <Route path="housing" element={<p>Housing</p>} />
-                <Route path="housing/:id" element={<p>Housing detail</p>} />
+                <Route path="housing/:id" element={<Housing />} />
                 <Route path="*" element={<p>Not found</p>} />
+                <Route path="not-found" element={<p>Not found</p>} />
             </Route>
         </Routes>
     );

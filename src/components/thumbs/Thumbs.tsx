@@ -9,7 +9,7 @@ const Thumbs = () => {
 
     return (
         <div className='thumbs'>
-            {housing.map((house) => <Thumb id={house?.id} title={house?.title} cover={house?.cover}/>)}
+            {housing.map((house) => <Thumb key={house?.id} id={house?.id} title={house?.title} cover={house?.cover}/>)}
         </div>
     )
 }
