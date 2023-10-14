@@ -10,6 +10,14 @@
     max-height: 46px;
 }
 
+.header_logo:hover {
+    cursor: pointer;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 .header > nav > ul {
   display: flex;
   align-items: center;

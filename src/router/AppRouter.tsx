@@ -10,6 +10,7 @@ const AppRouter = () => {
             <Route element={<MainLayout />}>
                 <Route index element={<Home />} />
                 <Route path="housing/:id" element={<Housing />} />
+                <Route path="about" element={<p>about</p>}/>
                 <Route path="*" element={<p>Not found</p>} />
                 <Route path="not-found" element={<p>Not found</p>} />
             </Route>
