@@ -26,7 +26,9 @@ const Housing = () => {
 
 
     return (
-        <p>house details: {house?.title}</p>
+        <div>
+            <p>house details: {house?.title}</p>
+        </div>
     )
 }
 
