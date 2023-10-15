@@ -1,6 +1,6 @@
 import './home.css'
 import Thumbs from '../../components/thumbs/Thumbs';
-import Banner from '../../components/Banner/Banner';
+import Banner from '../../components/shared/banner/Banner';
 import logo from '../../assets/home_banner.png'
 
 const Home = () => {
