@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import useHousing from "../../hooks/useHousing"
 import { useNavigate, useParams } from "react-router-dom";
+import Carrousel from "../../components/carrousel/Carrousel";
+import './housing.css'
 
 const Housing = () => {
 
@@ -23,11 +25,15 @@ const Housing = () => {
 
     }, [id, navigate, getOne, house])
 
+    if(!house){
+        return;
+    }
 
+     const { pictures } = house
 
     return (
-        <div>
-            <p>house details: {house?.title}</p>
+        <div className="housing">
+            <Carrousel pictures={pictures}/>
         </div>
     )
 }
