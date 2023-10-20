@@ -1,0 +1,11 @@
+.about {
+    padding: 1em;
+    gap: 2em;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .about {
+      padding: 2em;
+    }
+  }
+  

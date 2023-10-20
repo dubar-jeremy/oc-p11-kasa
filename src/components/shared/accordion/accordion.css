@@ -1,0 +1,42 @@
+.accordion {
+  max-width: 1020px;
+  margin: 2rem auto;
+}
+
+
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: var(--pastel-red);
+  border-radius: 10px;
+  color: var(--white);
+  font-size: 1.2rem;
+  /* position: absolute;
+  top: -60%; */
+}
+
+.accordion-title:hover {
+  background-color: var(--pastel-red);
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-content {
+  background-color: var(--gray);
+  color: var(--pastel-red);
+  /* border-radius: 0 0 10px 10px; */
+}
+
+.active {
+  background-image: url("../../../assets/arrow_back.png");
+}
+
+.pending {
+  background-image: url("../../../assets/arrow_up.png");
+}
