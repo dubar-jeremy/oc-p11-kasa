@@ -1,3 +1,9 @@
 .housing {
     padding: 1em;
 }
+
+.tag_container {
+    width: 55%;
+    display: flex;
+    margin: 0 auto;
+}

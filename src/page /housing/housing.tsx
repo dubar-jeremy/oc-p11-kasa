@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import useHousing from "../../hooks/useHousing"
 import { useNavigate, useParams } from "react-router-dom";
 import Carrousel from "../../components/carrousel/Carrousel";
+import Tag from "../../components/tag/Tag";
 import './housing.css'
 
 const Housing = () => {
@@ -25,15 +26,19 @@ const Housing = () => {
 
     }, [id, navigate, getOne, house])
 
-    if(!house){
+    if (!house) {
         return;
     }
 
-     const { pictures } = house
+    const { pictures, tags } = house
+
 
     return (
         <div className="housing">
-            <Carrousel pictures={pictures}/>
+            <Carrousel pictures={pictures} />
+            <div className="tag_container">
+                {tags?.map((tag: string) => <Tag tag={tag} />)}
+            </div>
         </div>
     )
 }
