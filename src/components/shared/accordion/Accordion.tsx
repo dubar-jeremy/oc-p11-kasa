@@ -15,9 +15,8 @@ const Accordion = ({ title, content }: AccordionProps) => {
   // prevent accordion to be hidden by footer
   useEffect(() => {
     if (document?.querySelector(".accordion-content")) {
+      console.log("here")
       document.querySelector(".footer")?.classList?.remove("footer_fixed");
-    } else {
-      document.querySelector(".footer")?.classList?.add("footer_fixed");
     }
   }, [open, location]);
 

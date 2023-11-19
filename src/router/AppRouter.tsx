@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-import MainLayout from "../components/Layout/MainLayout";
 import Home from "../page /home/Home";
 import Housing from "../page /housing/housing";
 import NotFound from "../page /not-found/notFound";
 import About from "../page /about/About";
-import NotFoundLayout from "../components/Layout/NotFoundLayout";
+import MainLayout from "../components/layout/MainLayout";
+import NotFoundLayout from "../components/layout/NotFoundLayout";
 
 const AppRouter = () => {
   return (

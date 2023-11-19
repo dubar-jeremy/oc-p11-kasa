@@ -11,12 +11,13 @@ const Footer = ({ fixed }: FooterProps) => {
   useEffect(() => {
     if (!isHousingPage) {
       document.querySelector(".footer")?.classList?.remove("footer_fixed");
+      console.log("here")
     }
 
     if (fixed) {
       document.querySelector(".footer")?.classList?.add("footer_fixed");
     }
-  }, [location]);
+  }, [location, fixed, isHousingPage]);
 
   return (
     <div className={`footer`}>

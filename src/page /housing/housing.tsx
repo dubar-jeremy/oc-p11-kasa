@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import useHousing from "../../hooks/useHousing";
 import { useNavigate, useParams } from "react-router-dom";
 import Carrousel from "../../components/carrousel/Carrousel";
