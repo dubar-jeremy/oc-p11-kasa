@@ -1,8 +1,25 @@
 import "./footer.css";
 import logo from "../../../assets/logo_footer.png";
-const Footer = () => {
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { FooterProps } from "./footer.props";
+const Footer = ({ fixed }: FooterProps) => {
+  const location = useLocation();
+
+  const isHousingPage = location.pathname.includes("housing");
+  // prevent accordion to be hidden by footer
+  useEffect(() => {
+    if (!isHousingPage) {
+      document.querySelector(".footer")?.classList?.remove("footer_fixed");
+    }
+
+    if (fixed) {
+      document.querySelector(".footer")?.classList?.add("footer_fixed");
+    }
+  }, [location]);
+
   return (
-    <div className="footer footer_fixed">
+    <div className={`footer`}>
       <div className="footer_content">
         <img src={logo} alt="logo" className="footer_logo" />
         <div className="footer_signature">
