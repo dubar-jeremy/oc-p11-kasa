@@ -28,7 +28,7 @@ const Housing = () => {
     return;
   }
 
-  const { pictures, tags } = house;
+  const { pictures, tags, rating } = house;
 
   const [firstname, lastname] = house?.host?.name?.split(" ") || [];
 
@@ -46,7 +46,7 @@ const Housing = () => {
           ))}
         </div>
         <div className="housing_rating_container">
-          <Star />
+          <Star rating={rating} />
         </div>
         <div className="housing_host_container">
           <div className="housing_host_name">

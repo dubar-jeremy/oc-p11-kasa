@@ -11,8 +11,12 @@ const About = () => {
         <Banner logo={logo} />
       </div>
       <div className="about">
-        {aboutData?.map((item: AboutItem) => (
-          <Accordion title={item?.title} content={item?.content} />
+        {aboutData?.map((item: AboutItem, index: number) => (
+          <Accordion
+            key={`${item?.title}-${index}`}
+            title={item?.title}
+            content={item?.content}
+          />
         ))}
       </div>
     </>
