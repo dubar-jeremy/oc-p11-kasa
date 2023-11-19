@@ -1,16 +1,15 @@
-
-import './tag.css';
+import "./tag.css";
 
 interface TagProps {
-    tag: string;
+  tag: string;
 }
 
 const Tag = ({ tag }: TagProps) => {
-    return (
-        <div className="tag">
-            <p className="tag_content">{tag}</p>
-        </div>
-    )
-}
+  return (
+    <div className="tag">
+      <p className="tag_content">{tag}</p>
+    </div>
+  );
+};
 
-export default Tag
+export default Tag;
