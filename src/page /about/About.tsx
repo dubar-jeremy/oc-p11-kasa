@@ -2,7 +2,7 @@ import Banner from "../../components/shared/banner/Banner";
 import logo from "../../assets/about_logo.png";
 import Accordion from "../../components/shared/accordion/Accordion";
 import { AboutItem, aboutData } from "../../data/about";
-import "./about.css";
+import "./about.scss";
 
 const About = () => {
   return (

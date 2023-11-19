@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { AccordionProps } from "./accordion.props";
 import arrowBack from "../../../assets/arrow_back.png";
 import arrowUp from "../../../assets/arrow_up.png";
-import "./accordion.css";
+import "./accordion.scss";
 import { useLocation } from "react-router-dom";
 
 const Accordion = ({ title, content }: AccordionProps) => {

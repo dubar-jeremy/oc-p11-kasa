@@ -1,6 +1,6 @@
 import useHousing from '../../hooks/useHousing';
 import Thumb from '../thumb/Thumb';
-import './thumbs.css'
+import './thumbs.scss'
 const Thumbs = () => {
 
     const { getAll } = useHousing();

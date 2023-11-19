@@ -3,9 +3,9 @@ import useHousing from "../../hooks/useHousing";
 import { useNavigate, useParams } from "react-router-dom";
 import Carrousel from "../../components/carrousel/Carrousel";
 import Tag from "../../components/tag/Tag";
-import "./housing.css";
 import Accordion from "../../components/shared/accordion/Accordion";
 import Star from "../../components/star/Star";
+import "./housing.scss";
 
 const Housing = () => {
   const { getOne } = useHousing();

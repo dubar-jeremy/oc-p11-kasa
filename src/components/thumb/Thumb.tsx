@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import './thumb.css';
+import './thumb.scss';
 import { ThumbProps } from './thumb.props';
 
 const Thumb = ({ id, title, cover }: ThumbProps) => {

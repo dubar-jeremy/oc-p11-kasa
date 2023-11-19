@@ -1,4 +1,4 @@
-import './banner.css'
+import './banner.scss'
 import { BannerProps } from './banner.props';
 
 const Banner = ({content, logo}: BannerProps) => {

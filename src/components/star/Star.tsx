@@ -1,7 +1,7 @@
 import star from "../../assets/star.png";
 import starInactive from "../../assets/starInactive.png";
 import { StarProps } from "./star.props";
-import "./star.css";
+import "./star.scss";
 
 const Star = ({ rating }: StarProps) => {
   const arrayLength = 5;

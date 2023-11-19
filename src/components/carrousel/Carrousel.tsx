@@ -1,7 +1,7 @@
 import { useState } from "react";
 import arrowNext from "../../assets/next.png";
 import arrowPrevious from "../../assets/previous.png";
-import "./carrousel.css";
+import "./carrousel.scss";
 
 interface CarrouselProps {
   pictures: string[];

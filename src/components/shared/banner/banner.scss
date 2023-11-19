@@ -23,13 +23,13 @@
   left: 5%;
   width: 43%;
   max-width: 217px;
-}
 
-.banner_text_container > p {
-  margin: 0;
-  font-size: 1rem;
-  color: var(--white);
-  font-weight: bolder;
+  > p {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--white);
+    font-weight: bolder;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -55,10 +55,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
 
-  .banner_text_container > p {
-    text-align: center;
-    font-size: 2rem;
+    > p {
+      text-align: center;
+      font-size: 2rem;
+    }
   }
 }

@@ -1,4 +1,4 @@
-import './home.css'
+import './home.scss'
 import Thumbs from '../../components/thumbs/Thumbs';
 import Banner from '../../components/shared/banner/Banner';
 import logo from '../../assets/home_banner.png'

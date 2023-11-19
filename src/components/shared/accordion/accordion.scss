@@ -7,12 +7,10 @@
   border-radius: 10px;
   color: var(--white);
   font-size: 1.2rem;
-  /* position: absolute;
-  top: -60%; */
-}
 
-.accordion-title:hover {
-  background-color: var(--pastel-red);
+  &:hover {
+    background-color: var(--pastel-red);
+  }
 }
 
 .accordion-title,
@@ -23,7 +21,6 @@
 .accordion-content {
   background-color: var(--gray);
   color: var(--pastel-red);
-  /* border-radius: 0 0 10px 10px; */
 }
 
 .active {
